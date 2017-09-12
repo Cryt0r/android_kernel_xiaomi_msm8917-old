@@ -1,3 +1,4 @@
+ifeq ($(CONFIG_MACH_XIAOMI_ROLEX),y)
 dtb-$(CONFIG_MACH_XIAOMI_ROLEX) += \
 	rolex-01.dtb \
 	rolex-02.dtb \
@@ -65,6 +66,7 @@ dtb-$(CONFIG_MACH_XIAOMI_ROLEX) += \
 	rolex-64.dtb \
 	rolex-65.dtb \
 	rolex-66.dtb
+else
 
 dtb-$(CONFIG_ARCH_MSM8996) += msm8996-v2-pmi8994-cdp.dtb \
 	msm8996-v2-pmi8994-mtp.dtb \
@@ -256,6 +258,7 @@ dtb-$(CONFIG_ARCH_MSM8909) += msm8909-pm8916-mtp.dtb \
 	msm8909w-pm8916-mtp-ext-chg-fg.dtb \
 	msm8909-pm8916-cdp.dtb \
 	msm8909w-cdp.dtb
+endif
 
 
 ifeq ($(CONFIG_ARM64),y)
