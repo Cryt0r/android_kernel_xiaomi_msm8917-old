@@ -20,7 +20,7 @@
  */
 
 #include <linux/irq.h>
-#include <linux/hqsysfs.h>
+#include "hqsysfs.h"
 #include "gt9xx.h"
 
 #if GTP_ICS_SLOT_REPORT
